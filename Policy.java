@@ -2,7 +2,7 @@
 public class Policy {
 
    //setting up all private instances that do not change
-   private int policyNum;
+   private String policyNum;
    private String providerName;
    private String policyholderFirstName;
    private String policyholderLastName;
@@ -14,18 +14,18 @@ public class Policy {
    //defult constructor that has nothing in it 
    public Policy() {
    
-      this.policyNum = 0;
+      this.policyNum = " ";
       this.providerName = " ";
       this.policyholderFirstName= " ";
       this.policyholderLastName= " ";
       this.policyholderAge = 0;
-      this.smokerStatus= " ";
+      this.smokingStatus= " ";
       this.height = 0.0;
       this.weight = 0.0;
    
    }
    //constructor that takes in input and sets it to the private instances/variables
-   public Policy(int policyNum, String providerName, String policyholderFirstName, String policyholderLastName, int policyholderAge, String smokingStatus, double height, double weight){
+   public Policy(String policyNum, String providerName, String policyholderFirstName, String policyholderLastName, int policyholderAge, String smokingStatus, double height, double weight){
    
         this.policyNum = policyNum;
         this.providerName = providerName;
@@ -38,11 +38,11 @@ public class Policy {
    
    }
    //getters and setters for all private instances/variables
-   public void setPolicyNum(int policyNum){
+   public void setPolicyNum(String policyNum){
       this.policyNum= policyNum;
    }
    
-   public int getPolicyNum() {
+   public String getPolicyNum() {
       return policyNum;
    }
    //setter and getter for policynum complete
